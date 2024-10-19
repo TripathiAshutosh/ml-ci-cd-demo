@@ -23,8 +23,8 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 
 ## Pipeline
-cat_col = [1,2,3]
-num_col = [0,4]
+cat_col = [1, 2, 3]
+num_col = [0, 4]
 
 transform = ColumnTransformer(
     [
@@ -68,4 +68,3 @@ with open("./Results/metrics.txt", "w") as outfile:
 
 ## Saving the model file
 sio.dump(pipe, "./Model/drug_pipeline.skops")
-
